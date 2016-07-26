@@ -1,0 +1,33 @@
+// ==========================================================================
+// MEDIA RELEASE STYLING
+// ==========================================================================
+.c-release__title {
+    font-size: 42px;
+    font-family: $font-ExBlackCond-substitute;
+    font-stretch: condensed;
+    font-weight: $font-ExBlackCond-substitute-weight;
+    color: $labor-red;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.c-release__headline {
+    font-weight: 700;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+.c-release__header {
+    margin-bottom: 2em;
+}
+
+.c-release__member {
+    font-size: large;
+    text-decoration: underline;
+    color: $labor-red;
+}
+
+.c-release__date {
+    font-weight: bold;
+    text-transform: uppercase;
+}

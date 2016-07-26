@@ -1,0 +1,48 @@
+// Our variables
+$base-font-family: 'Raleway', 'Gotham', Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     2rem;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$labor-red:        rgb(222,43,51);
+$labor-blue:       rgb(52,106,169);
+$negative-gold:    rgb(215,173,0);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+$font-ExBlackCond-substitute:			'Anton', 'Arial', sans-serif;
+$font-ExBlackCond-substitute-weight:	400;
+$font-Gotham-substitute:				'Raleway', 'Arial', sans-serif;
+$font-Gotham-substitute-weight:			400;
+
+$header-height:			3.5rem;
+$logo-blue-width:		1.2*$header-height;
+$logo-fold-width:		0.33*$header-height;
+$logo-fold-drop:		0.28*$header-height;
+$logo-stars-width:		0.87*$header-height;
+
+$site-title-maximum-width:		530px;
+
+$colour-body-background:	rgb(51,51,51);
+$colour-body-text:			rgb(230,230,230);
+$colour-header-text:		white;
+$colour-labor-red:			rgb(222,43,51);
+$colour-labor-blue:			rgb(52,106,169);
+$colour-negative-gold:		rgb(215,173,0);

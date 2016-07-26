@@ -1,0 +1,54 @@
+// ==========================================================================
+// UTILITIES
+// ==========================================================================
+
+//
+// Extending blocks to the edge of the page, through wrapper margins
+// --------------------------------------------------------------------------
+
+// Left margin
+.u-extendfull, .u-extendleft
+{
+	padding-left: 100vw;
+	margin-left: -100vw;
+}
+
+// Right margin
+.u-extendfull, .u-extendright
+{
+	padding-right: 100vw;
+	margin-right: -100vw;
+}
+
+/**
+ * Wrapper
+ */
+.u-wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %u-clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+
+/**
+ * Clearfix
+ */
+%u-clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
