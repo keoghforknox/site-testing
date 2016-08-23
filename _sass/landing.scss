@@ -1,0 +1,73 @@
+// Base Styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+$dark-raspberry: #91255F;
+$imperial-purple: #60193F;
+$slate-blue: #6C60DB;
+$contrast-colour: white;
+
+@import "bootstrap/normalize";
+
+body.t-landing-page {
+  color: $contrast-colour;
+  background-color: $dark-raspberry;
+  text-shadow: 1vh 1vh 5px $imperial-purple;
+  font-family: 'Raleway', sans-serif;
+
+  footer {
+    background-color: $imperial-purple;
+    color: lighten($imperial-purple, 60);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px 30px;;
+    font-size: 0.5rem;
+  }
+}
+
+.c-landing-title {
+  margin: 15vh 5px 5px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12vmax;
+  font-weight: 800;
+}
+
+ul.c-landing-links {
+  text-align: center;
+  font-size: 12vmax;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+  }
+  a {
+    color: $contrast-colour;
+  }
+  a:hover,
+  a:focus {
+    color: lighten($slate-blue, 10);
+  }
+}
+
+.c-form {
+  margin-top: 5vmax;
+  text-align: center;
+  padding: 0 5px;
+
+  input {
+    display: inline-block;
+    background-color: darken($dark-raspberry, 5);
+    border: 2px solid $imperial-purple;
+    color: $contrast-colour;
+    border-radius: 0.25rem;
+    padding: 5px;
+    margin: 2px;
+  }
+
+  .button {
+    height: 2rem;
+  }
+}

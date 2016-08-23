@@ -6,17 +6,17 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Jake Keogh for Maroondah
+title: Jake Keogh for Knox
 description: > # this means to ignore newlines until "baseurl:"
-  Jake Keogh, Labor for Maroondah.
+  Jake Keogh for Knox
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jakekeogh.com.au" # the base hostname & protocol for your site
 
 candidate: Jake Keogh
 party:
-division: Maroondah
+division: Knox
 authorisation: >
-  Authorised by Jake Keogh, XX Some Road, The Basin
+  Authorised by Jake Keogh 1/8 Democrat Drive, The Basin 3154
 
 collections:
   releases:
@@ -25,3 +25,4 @@ collections:
 
 # Build settings
 markdown: kramdown
+sass_dir: _sass
