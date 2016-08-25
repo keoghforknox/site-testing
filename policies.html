@@ -1,0 +1,24 @@
+---
+layout: page
+title: Policies
+permalink: /policies/
+navbar: true
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Policies</h1>
+
+  <ul class="post-list">
+    {% for policy in site.policies %}
+      <li>
+        <span class="post-meta">{{ policy.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ policy.url | prepend: site.baseurl }}">{{ policy.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
