@@ -14,10 +14,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <nav class="collapse navbar-collapse" id="jk-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="{{ '/' | prefix: site.baseurl }}">About Jake <span class="sr-only">(current)</span></a></li>
-        <li><a href="{{ '/media' | prefix: site.baseurl }}">Media</a></li>
-        <li><a href="{{ '/contact' | prefix: site.baseurl }}">Contact</a></li>
+        {% for thispage in site.data.navbar %}{% assign thepage = site.pages | where: 'title', thispage.title | first %}{% unless thepage %}{% assign thepage = site.pages | where: 'url', thispage.url | first %}{% endunless %}
+        <li{% if thepage.url == page.url %} class="active"{% endif %}><a href="{{ thepage.url | prefix: site.baseurl }}">{{ thispage.title }}<span class="sr-only"> (current)</span></a></li>
+        {% endfor %}
       </ul>
+
     </nav><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </header>
