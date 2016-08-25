@@ -1,5 +1,8 @@
 - title: About Jake
-  url: /
+  url: '/'
 - title: Policies
+  url: '/policies/'
 - title: Media
+  url: '/media/'
 - title: Contact
+  url: '/contact.html'
