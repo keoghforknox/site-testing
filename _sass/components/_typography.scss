@@ -14,3 +14,16 @@ h1.c-page__title {
 h2.c-page__title {
   font-size: 4.5vmax;
 }
+
+.c-text--lining-numbers {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum";
+}
+
+.c-text--typewriter {
+  font-family: monospace;
+}
+
+// a {
+//   word-break: break-all;
+// }

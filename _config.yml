@@ -11,6 +11,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Jake Keogh for Knox
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jakekeogh.com.au" # the base hostname & protocol for your site
+repository: keoghforknox/keoghforknox.github.io
 
 candidate: Jake Keogh
 party:

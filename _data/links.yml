@@ -1,0 +1,42 @@
+jekyll:
+  url: http://jekyllrb.com
+  title: 'Jekyll'
+github:
+  url: https://github.com
+  title: 'GitHub'
+github-pages:
+  url: https://pages.github.com
+  title: 'GitHub'
+forestry:
+  url: https://forestry.io
+  title: 'Travis CI'
+sourcecode:
+  url: https://github.com/keoghforknox/keoghforknox.github.io
+  title: 'Source'
+sass:
+  url: http://sass-lang.com/
+  title: 'Sass'
+google-fonts:
+  url: http://fonts.google.com/
+  title: 'Google Fonts'
+bootstrap:
+  url: http://getbootstrap.com/
+  title: 'Bootstrap'
+sublime:
+  url: http://www.sublimetext.com
+  title: 'Sublime Text'
+safari:
+  url: https://developer.apple.com/safari/
+  title: 'Safari'
+sourcetree:
+  url: http://www.sourcetreeapp.com/
+  title: 'SourceTree'
+sim-daltonism:
+  url: https://michelf.ca/projects/sim-daltonism/
+  title: 'Sim Daltonism'
+wave:
+  url: http://wave.webaim.org
+  title: 'WAVE Accessibility Tool'
+email-obfuscator:
+  url: http://wbwip.com/wbw/emailencoder.html
+  title: 'West Bay Web email encoder'
