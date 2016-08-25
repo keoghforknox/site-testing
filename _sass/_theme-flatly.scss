@@ -2,7 +2,8 @@
 // Bootswatch
 // -----------------------------------------------------
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic" !default;
+$web-font-path: 'https://fonts.googleapis.com/css?family=Raleway:300,300i,700,700i,800' !default;
+
 @import url($web-font-path);
 
 // Navbar =====================================================================
@@ -11,7 +12,6 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
   border-width: 0;
 
   &-default {
-
     .badge {
       background-color: #fff;
       color: $navbar-default-bg;
@@ -19,15 +19,10 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
   }
 
   &-inverse {
-
     .badge {
       background-color: #fff;
       color: $navbar-inverse-bg;
     }
-  }
-
-  &-brand {
-    line-height: 1;
   }
 }
 
@@ -76,7 +71,6 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
 
 table,
 .table {
-
   a:not(.btn) {
     text-decoration: underline;
   }
@@ -121,8 +115,9 @@ table,
 
 .form-control,
 input {
-  border-width: 2px;
   @include box-shadow(none);
+
+  border-width: 2px;
 
   &:focus {
     @include box-shadow(none);
@@ -221,10 +216,10 @@ input {
   }
 
   .disabled {
-    &>a,
-    &>a:hover,
-    &>a:focus,
-    &>span {
+    & > a,
+    & > a:hover,
+    & > a:focus,
+    & > span {
       background-color: $pagination-disabled-bg;
     }
   }
@@ -234,8 +229,8 @@ input {
 
 .close {
   color: #fff;
-  text-decoration: none;
   opacity: 0.4;
+  text-decoration: none;
 
   &:hover,
   &:focus {
@@ -245,7 +240,6 @@ input {
 }
 
 .alert {
-
   .alert-link {
     color: #fff;
     text-decoration: underline;
@@ -256,7 +250,9 @@ input {
 
 .progress {
   height: 10px;
+
   @include box-shadow(none);
+
   .progress-bar {
     font-size: 10px;
     line-height: 10px;
@@ -270,7 +266,6 @@ input {
 }
 
 a.list-group-item {
-
   &.active,
   &.active:hover,
   &.active:focus {
@@ -292,7 +287,7 @@ a.list-group-item {
     &.active {
       background-color: $state-warning-bg;
     }
-    
+
     &.active:hover,
     &.active:focus {
       background-color: darken($state-warning-bg, 5%);
@@ -303,7 +298,7 @@ a.list-group-item {
     &.active {
       background-color: $state-danger-bg;
     }
-    
+
     &.active:hover,
     &.active:focus {
       background-color: darken($state-danger-bg, 5%);

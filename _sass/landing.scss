@@ -1,70 +1,74 @@
-// Base Styles
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-$dark-raspberry: #91255F;
-$imperial-purple: #60193F;
-$slate-blue: #6C60DB;
-$contrast-colour: white;
+// ==========================================================================
+// LANDING PAGE STYLES
+// ==========================================================================
+$dark-raspberry: #91255f;
+$imperial-purple: #60193f;
+$slate-blue: #6c60db;
+$contrast-colour: #fff;
 
-@import "bootstrap/normalize";
+@import 'bootstrap/normalize';
 
 body.t-landing-page {
-  color: $contrast-colour;
   background-color: $dark-raspberry;
-  text-shadow: 1vh 1vh 5px $imperial-purple;
+  color: $contrast-colour;
   font-family: 'Raleway', sans-serif;
+  text-shadow: 1vh 1vh 5px $imperial-purple;
 
   footer {
     background-color: $imperial-purple;
-    color: lighten($imperial-purple, 60);
-    position: absolute;
     bottom: 0;
-    width: 100%;
     box-sizing: border-box;
+    color: lighten($imperial-purple, 60);
+    font-size: .5rem;
+    padding: 5px 30px;
+    position: absolute;
     text-align: center;
-    padding: 5px 30px;;
-    font-size: 0.5rem;
+    width: 100%;
   }
 }
 
 .c-landing-title {
-  margin: 15vh 5px 5px;
-  text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 12vmax;
   font-weight: 800;
+  margin: 15vh 5px 5px;
+  text-align: center;
 }
 
 ul.c-landing-links {
-  text-align: center;
   font-size: 12vmax;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  text-align: center;
+
   li {
     display: inline-block;
   }
+
   a {
     color: $contrast-colour;
-  }
-  a:hover,
-  a:focus {
-    color: lighten($slate-blue, 10);
+
+    &:hover,
+    &:focus {
+      color: lighten($slate-blue, 10);
+    }
   }
 }
 
 .c-form {
   margin-top: 5vmax;
-  text-align: center;
   padding: 0 5px;
+  text-align: center;
 
   input {
-    display: inline-block;
     background-color: darken($dark-raspberry, 5);
     border: 2px solid $imperial-purple;
+    border-radius: .25rem;
     color: $contrast-colour;
-    border-radius: 0.25rem;
-    padding: 5px;
+    display: inline-block;
     margin: 2px;
+    padding: 5px;
   }
 
   .button {

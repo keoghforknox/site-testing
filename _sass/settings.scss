@@ -1,11 +1,10 @@
-// Variables
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
-// Colors
-$dark-raspberry: #91255F;
-$imperial-purple: #60193F;
-$slate-blue: #6C60DB;
-$maximum-blue-purple: #AAA0FF;
+// ==========================================================================
+// VARIABLES
+// ==========================================================================
+$dark-raspberry: #91255f;
+$imperial-purple: #60193f;
+$slate-blue: #6c60db;
+$maximum-blue-purple: #aaa0ff;
 
 $light-grey: #e1e1e1 !default;
 $dark-grey: #333 !default;
@@ -17,9 +16,9 @@ $link-color: $slate-blue !default;
 $font-color: #222 !default;
 
 // Typography
-$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 
-//Grid Variables
+// Grid Variables
 $container-width: 960px !default;
 $container-width-larger-than-mobile: 85% !default;
 $container-width-larger-than-phablet: 80% !default;
@@ -30,7 +29,5 @@ $column-margin: 4% !default; // space between columns
 // Misc
 $global-radius: 4px !default;
 
-//
 // Header
-// --------------------------------------------------------------------------
 $header-height: 5rem;
