@@ -1,0 +1,16 @@
+.c-page__title {
+  background-color: $dark-raspberry;
+  box-shadow: $dark-raspberry 0.2em 0px 0px 0px, $dark-raspberry (-0.2em) 0px 0px 0px, 0 0.2em 10px black;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1.c-page__title {
+  font-size: 6.5vmax;
+}
+
+h2.c-page__title {
+  font-size: 4.5vmax;
+}
