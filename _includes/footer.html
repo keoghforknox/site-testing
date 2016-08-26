@@ -1,12 +1,14 @@
-<div class="container-fluid">
+<div class="c-footer__signup">
   <h2>Get updates from Jake:</h2>
   {% unless page.petition %}{% include mailchimp-generic.html %}{% else %}{% include petitions/mailchimp-{{ page.petition }}.html %}{% endunless %}
 </div>
 
-<footer class="site-footer">
+<footer class="c-footer">
 
-<div class="container-fluid">
-  {{ site.authorisation }}. © {{ site.candidate }} {{ site.time | date: '%Y' }}. <a href="/imprint">Imprint</a>.
+<div class="c-footer__disclaimer">
+  <span>{{ site.authorisation }}.</span>
+  <span>© {{ site.candidate }} {{ site.time | date: '%Y' }}.</span>
+  <span><a href="/imprint">Imprint</a>.</span>
 </div>
 
 </footer>
