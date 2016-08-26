@@ -15,6 +15,12 @@ h2.c-page__title {
   font-size: 4.5vmax;
 }
 
+.c-text--copy {
+  a {
+    text-decoration: underline;
+  }
+}
+
 .c-text--lining-numbers {
   font-variant-numeric: lining-nums;
   font-feature-settings: "lnum";
@@ -24,6 +30,11 @@ h2.c-page__title {
   font-family: monospace;
 }
 
-// a {
-//   word-break: break-all;
-// }
+.c-link--readmore {
+  // display: block;
+  margin: 0 0 1rem;
+}
+
+.btn-xs {
+  font-size: 1.8rem;
+}

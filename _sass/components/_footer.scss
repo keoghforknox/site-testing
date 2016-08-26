@@ -1,0 +1,73 @@
+// ==========================================================================
+// FOOTER
+// ==========================================================================
+$disclaimer-font-path: 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300' !default;
+@import url($disclaimer-font-path);
+
+.c-footer {
+  // @extend .site-footer;
+  position: relative;
+  bottom: 0;
+}
+
+.c-footer__disclaimer {
+  background-color: $brand-secondary;
+  color: lighten($brand-secondary, 50%);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: $padding-small-vertical $padding-xs-horizontal;
+  text-align: center;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  span {
+    display: inline-block;
+  }
+}
+
+.c-footer__signup {
+  background-color: $brand-primary;
+  color: white;
+  padding: 1rem;
+
+  .form-group {
+    margin: 0;
+  }
+
+  .btn-primary {
+    background-color: $brand-secondary;
+    // border-color: $brand-secondary;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: lighten($brand-secondary, 20%);
+      // border-color: lighten($brand-secondary, 20%);
+      border: none;
+    }
+  }
+
+  input {
+    background-color: lighten($brand-primary, 5%);
+    border-color: darken($brand-primary, 2%);
+
+    &:focus,
+    &:active {
+      border-color: $brand-secondary;
+    }
+
+  }
+
+  .form-control {
+    @include placeholder (lighten($brand-primary, 40%));
+  }
+
+  // .form-control::-webkit-input-placeholder {
+  //   color: lighten($brand-primary, 40%);
+  // }
+}

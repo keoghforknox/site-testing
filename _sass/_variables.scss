@@ -26,6 +26,7 @@ $gray-lighter: #ecf0f1 !default;
 // #eee
 
 $brand-primary: $dark-raspberry !default;
+$brand-secondary: $imperial-purple !default;
 $brand-success: $slate-blue !default;
 $brand-info: $maximum-blue-purple !default;
 $brand-warning: #f39c12 !default;
@@ -410,7 +411,7 @@ $container-lg: $container-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height: 5rem !default;
+$navbar-height: 6rem !default;
 $navbar-margin-bottom: $line-height-computed !default;
 $navbar-border-radius: 0 !default;
 $navbar-padding-horizontal: floor($grid-gutter-width / 2) !default;
@@ -423,9 +424,9 @@ $navbar-default-border: transparent !default;
 
 // Navbar links
 $navbar-default-link-color: #fff !default;
-$navbar-default-link-hover-color: $brand-success !default;
-$navbar-default-link-hover-bg: transparent !default;
-$navbar-default-link-active-color: #fff !default;
+$navbar-default-link-hover-color: $navbar-default-link-color !default;
+$navbar-default-link-hover-bg: darken($navbar-default-bg, 5%) !default;
+$navbar-default-link-active-color: $navbar-default-link-color !default;
 $navbar-default-link-active-bg: darken($navbar-default-bg, 10%) !default;
 $navbar-default-link-disabled-color: #ccc !default;
 $navbar-default-link-disabled-bg: transparent !default;
