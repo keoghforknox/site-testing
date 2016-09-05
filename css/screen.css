@@ -2282,7 +2282,7 @@ body { min-height: 100%; }
 .o-container-fluid:before, .o-container-fluid:after { content: " "; display: table; }
 .o-container-fluid:after { clear: both; }
 
-.c-banner { background-image: url("/images/banner.jpg"); background-position: top; background-repeat: no-repeat; background-size: cover; border: .1px solid transparent; min-height: 66vh; padding: 0 5vw; text-align: 50% 90%; }
+.c-banner { background-color: #727a83; background-image: url("/images/banner.jpg"); background-position: top; background-repeat: no-repeat; background-size: cover; border: .1px solid transparent; min-height: 66vh; padding: 0 5vw; text-align: 50% 90%; }
 .c-banner h1, .c-banner h2 { background-color: #91255f; box-shadow: #91255f 1.3vmax 0 0 0, #91255f -1.3vmax 0 0 0, 0 1.3vmax 10px -2px black; color: white; display: inline; font-weight: bold; text-align: left; text-transform: uppercase; }
 .c-banner h1 { font-size: 6.5vmax; font-weight: 800; }
 .c-banner h2 { font-size: 4.5vmax; font-weight: 700; }
@@ -2297,7 +2297,10 @@ body { min-height: 100%; }
 .c-footer__disclaimer a { color: inherit; text-decoration: underline; }
 .c-footer__disclaimer span { display: inline-block; }
 
-.c-footer__signup { background-color: #91255f; color: white; padding: 1rem; }
+.c-footer__social-links { background-color: #91255f; color: white; font-size: 200%; padding: 1rem; text-align: center; }
+.c-footer__social-links a { color: white; margin: 0 .2em; }
+
+.c-footer__signup { background-color: #91255f; color: #f0c5dc; padding: 1rem; }
 .c-footer__signup .form-group { margin: 0; }
 .c-footer__signup .btn-primary { background-color: #60193f; border: none; }
 .c-footer__signup .btn-primary:hover, .c-footer__signup .btn-primary:focus, .c-footer__signup .btn-primary:active { background-color: #b12e74; border: none; }
@@ -2317,6 +2320,8 @@ h2.c-page__title { font-size: 4.5vmax; }
 
 .c-text--lining-numbers { font-variant-numeric: lining-nums; font-feature-settings: "lnum"; }
 
+.c-text--small { font-size: 80%; }
+
 .c-text--typewriter { font-family: monospace; }
 
 .c-link--readmore { margin: 0 0 1rem; }
@@ -2328,3 +2333,30 @@ h2.c-page__title { font-size: 4.5vmax; }
 .navbar-toggle { margin-top: 1.25rem; margin-bottom: 1.25rem; }
 
 .form-control { margin: 1rem 0; }
+
+.c-form__inner-title { display: block; font-weight: bold; }
+
+.c-form--primary { display: inline-block; width: 12em; max-width: 100%; padding: 1rem; font-size: 1.8rem; line-height: 1.42857; color: #f0c5dc; background-color: #91255f; background-image: none; border: 1px solid #681b44; border-radius: 4px; margin: 1rem 0; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+.c-form--primary:focus { border-color: #91255f; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(145, 37, 95, 0.6); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(145, 37, 95, 0.6); }
+.c-form--primary::-moz-placeholder { color: #60193f; opacity: 1; }
+.c-form--primary:-ms-input-placeholder { color: #60193f; }
+.c-form--primary::-webkit-input-placeholder { color: #60193f; }
+.c-form--primary::-ms-expand { border: 0; background-color: transparent; }
+.c-form--primary[disabled], .c-form--primary[readonly], fieldset[disabled] .c-form--primary { background-color: #ecf0f1; opacity: 1; }
+.c-form--primary[disabled], fieldset[disabled] .c-form--primary { cursor: not-allowed; }
+.c-form--primary .form-group { margin: 0; }
+.c-form--primary .btn-primary { background-color: #60193f; border: none; }
+.c-form--primary .btn-primary:hover, .c-form--primary .btn-primary:focus, .c-form--primary .btn-primary:active { background-color: #b12e74; border: none; }
+@media (max-width: 768px) { .c-form--primary { width: 100%; } }
+
+select { height: 4rem; border: 1px solid black; }
+
+input[type="submit"] { width: auto; }
+
+.c-form__address__state { width: 5.9em; }
+@media (max-width: 768px) { .c-form__address__state { width: 49.5%; float: left; } }
+
+.c-form__address__zip { width: 5.9em; }
+@media (max-width: 768px) { .c-form__address__zip { margin-left: 1%; width: 49.5%; } }
+
+.c-release__headline { font-size: 110%; font-weight: bold; }
